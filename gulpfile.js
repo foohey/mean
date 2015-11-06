@@ -64,7 +64,11 @@ gulp.task( 'haml', function() {
  * CSS
  */
 gulp.task( 'css', function() {
-  gulp.src( 'src/**/*.css' )
+    gulp.src(
+      [
+        config.bowerDir + '/angular/angular-csp.css',
+        'src/**/*.css'
+      ])
       .pipe( concat( 'app.css' ))
       .pipe( gulp.dest('dist/public/css/'));
 });
