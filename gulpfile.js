@@ -67,6 +67,7 @@ gulp.task( 'haml', function() {
 gulp.task( 'css', function() {
   gulp.src( [
     config.bowerDir + '/bootstrap/dist/css/bootstrap.min.css',
+	config.bowerDir + '/angular/angular-csp.css',
     'src/**/*.css'
   ] )
       .pipe( concat( 'style.css' ))
