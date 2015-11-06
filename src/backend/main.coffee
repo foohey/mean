@@ -1,8 +1,8 @@
 express = require 'express'
 app     = express()
 
-# app.use '/static', require('serve-static')('../public')
-
+foo = "static"
+app.use( express[foo](__dirname + '/../public') )
 
 app.get '/', ( req, res ) ->
   res.send('Hello :D')
