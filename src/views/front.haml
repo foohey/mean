@@ -1,7 +1,11 @@
 !!!5
-%html
+%html{lang: "en", ng-app: "app"}
   %head
-    %title Mean
-
+    %meta{charset: "utf-8"}
+    %title Cats&Candies
+    %link{href: "/css/style.css", rel: "stylesheet"}
+    %script{src: "/js/vendor.js"}
+    %script{src: "/angular/app.js"}
   %body
-    %h1 Find me in views/front.haml
+    %h1 Welcome on Cats and Candies
+    %div.ng-view

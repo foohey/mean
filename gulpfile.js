@@ -30,9 +30,10 @@ gulp.task('serve', function () {
 gulp.task( 'js_vendor', function() {
   gulp.src(
     [
+      config.bowerDir + '/bootsrap/dist/js/bootstrap.min.js',
       config.bowerDir + '/angular/angular.min.js',
+      config.bowerDir + '/angular-route/angular-route.min.js',
       'src/js/**/*.js',
-      config.bowerDir + '/bootsrap/dist/js/bootstrap.min.js'
     ])
     .pipe( concat('vendor.js') )
     .pipe( gulp.dest( 'dist/public/js' ) )
@@ -58,7 +59,7 @@ gulp.task( 'coffee', function() {
 gulp.task( 'haml', function() {
   gulp.src( 'src/**/*.haml' )
       .pipe( haml( { ext: '.html' } ) )
-      .pipe( gulp.dest('dist/html'));
+      .pipe( gulp.dest('dist/public/html'));
 });
 
 /**
