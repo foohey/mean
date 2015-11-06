@@ -31,7 +31,8 @@ gulp.task( 'js_vendor', function() {
   gulp.src(
     [
       config.bowerDir + '/angular/angular.min.js',
-      'src/js/**/*.js'
+      'src/js/**/*.js',
+      config.bowerDir + '/bootsrap/dist/js/bootstrap.min.js'
     ])
     .pipe( concat('vendor.js') )
     .pipe( gulp.dest( 'dist/public/js' ) )
@@ -64,8 +65,11 @@ gulp.task( 'haml', function() {
  * CSS
  */
 gulp.task( 'css', function() {
-  gulp.src( 'src/**/*.css' )
-      .pipe( concat( 'app.css' ))
+  gulp.src( [
+    config.bowerDir + '/bootstrap/dist/css/bootstrap.min.css',
+    'src/**/*.css'
+  ] )
+      .pipe( concat( 'style.css' ))
       .pipe( gulp.dest('dist/public/css/'));
 });
 
