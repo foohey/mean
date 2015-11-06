@@ -1,8 +1,13 @@
-express = require 'express'
-app     = express()
+express  = require 'express'
+mongoose = require 'mongoose'
+path     = require 'path'
+config   = require './config'
 
-path    = require 'path'
+app = express()
+mongoose.connect('mongodb://localhost/mean')
+@models = require './models'
 
+# Little hack because static is a coffeescript reserved word...
 foo = "static"
 app.use( express[foo](__dirname + '/../public') )
 
@@ -12,5 +17,7 @@ app.get '/', ( req, res ) ->
 app.get '/admin', ( req, res ) ->
   res.sendFile( path.join __dirname, '..', 'public/html/views/back.html' )
 
-server = app.listen 3000, ->
-  console.log 'Running server'
+console.log config
+
+server = app.listen config.env.port, ->
+  console.log "Running server on #{ config.env.port }"

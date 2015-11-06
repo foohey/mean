@@ -11,6 +11,7 @@
     "gulp-haml": "^0.1.5",
     "gulp-util": "^3.0.6",
     "lodash": "^3.10.1",
+    "mongoose": "^4.2.4",
     "q": "^1.4.1"
   },
   "scripts": {
