@@ -1,0 +1,19 @@
+{
+  "name": "mean",
+  "version": "0.0.0",
+  "homepage": "https://github.com/foohey/mean",
+  "authors": [
+    "Mathieu Robardey <mathieu@altagem.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
