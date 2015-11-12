@@ -10,4 +10,4 @@ config =
     port: 3002
 
 module.exports = ( mode ) ->
-  config[ mode || process.argv[ 2 ] || 'local' ]
+  config[ mode || process.env.ENV || process.argv[ 2 ] || 'local' ]

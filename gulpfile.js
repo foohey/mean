@@ -12,7 +12,11 @@ var config = {
 }
 
 gulp.task( 'default',
-  ['watch', 'js_vendor', 'img', 'css', 'coffee', 'haml', 'serve']
+  [ 'build', 'watch', 'serve']
+)
+
+gulp.task( 'build',
+  [ 'js_vendor', 'img', 'css', 'coffee', 'haml' ]
 )
 
 /**
