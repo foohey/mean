@@ -1,0 +1,14 @@
+%fieldset.sign-container
+  %form.form-horizontal
+    %legend Sign in
+    .form-group
+      %label.col-md-5.control-label{for: "username"} Username or Mail
+      .col-md-4
+        %input#username.form-control.input-md{name: "username", placeholder: "John Doe", required: "", type: "text"}/
+    .form-group
+      %label.col-md-5.control-label{for: "password"} Password
+      .col-md-4
+        %input#password.form-control.input-md{name: "password", placeholder: "", required: "", type: "password"}/
+    .form-group
+      .col-sm-offset-5.col-sm-10
+        %input#submit-sign.btn.btn-default{name: "submit", placeholder: "", required: "", type: "submit", value: "Connect"}/

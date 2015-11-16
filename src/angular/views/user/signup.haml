@@ -1,1 +1,22 @@
-Sign up !
+%fieldset.sign-container
+  %form.form-horizontal
+    %legend Sign up !
+    .form-group
+      %label.col-md-5.control-label{for: "username"} Username
+      .col-md-4
+        %input#username.form-control.input-md{name: "username", placeholder: "John Doe", required: "", type: "text"}/
+    .form-group
+      %label.col-md-5.control-label{for: "mail"} Mail
+      .col-md-4
+        %input#mail.form-control.input-md{name: "mail", placeholder: "john.doe@mail.net", required: "", type: "text"}/
+    .form-group
+      %label.col-md-5.control-label{for: "password"} Password
+      .col-md-4
+        %input#password.form-control.input-md{name: "password", placeholder: "", required: "", type: "password"}/
+    .form-group
+      %label.col-md-5.control-label{for: "passwordConfirm"} Confirm Password
+      .col-md-4
+        %input#passwordConfirm.form-control.input-md{name: "passwordConfirm", placeholder: "", required: "", type: "password"}/
+    .form-group
+      .col-sm-offset-5.col-sm-10
+        %input#submit-sign.btn.btn-default{name: "submit", placeholder: "", required: "", type: "submit", value: "Let's go !"}/

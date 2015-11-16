@@ -2,10 +2,31 @@
 %html{lang: "en", ng-app: "app"}
   %head
     %meta{charset: "utf-8"}
-    %title Cats&Candies
+    %title Sweets&Kittens
     %link{href: "/css/style.css", rel: "stylesheet"}
     %script{src: "/js/vendor.js"}
     %script{src: "/angular/app.js"}
+    %link{href: "https://fonts.googleapis.com/css?family=Indie+Flower", rel: "stylesheet"}
   %body
-    %h1 Welcome on Cats and Candies
-    %div.ng-view
+
+  %nav.navbar.navbar-default
+    .container-fluid
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %a.navbar-brand{href: "#/"} Sweets&Kittens
+      / Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %form#search.navbar-form.navbar-left{role: "search"}
+          .form-group
+            %input#search-input.form-control{placeholder: "Search", :type : "text"}
+          %button.btn.btn-default{type: "submit"} Go
+        %form.navbar-form.navbar-right{role: "sign"}
+          %a#sign-up.btn.btn-default{href: "/#/signup"} Sign up
+          %a.btn.btn-default{href: "/#/signin"} Sign in
+    / /.navbar-collapse
+  / /.container-fluid
+    / /.navbar-collapse
+  / /.container-fluid
+
+
+  .ng-view

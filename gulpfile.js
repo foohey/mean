@@ -84,7 +84,7 @@ gulp.task( 'css', function() {
  */
 gulp.task( 'img', function() {
   gulp.src( ['src/**/*.jpg', 'src/**/*.gif', 'src/**/*.png'] )
-      .pipe( gulp.dest('dist/'));
+      .pipe( gulp.dest('dist/public'));
 });
 
 gulp.task( 'watch', function() {
