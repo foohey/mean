@@ -10,7 +10,10 @@ body {
   margin-right: 10px;
 }
 
-
+.form-group {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
 
 @media (min-width: 768px) {
   #search-input {
@@ -24,9 +27,16 @@ body {
   }
 }
 
+.police {
+  font-family: 'Indie Flower', cursive;
+}
+
+.sign-text {
+  font-size: 40px;
+}
+
 #concept {
   text-align: center;
-  font-family: 'Indie Flower', cursive;
   font-size: 35px;
   margin-top: 50px;
 }
@@ -50,10 +60,12 @@ legend {
   background-color: #8CC6EC;
   color: white;
   font-weight: bold;
+  font-size: 20px;
 }
 
 #submit-sign:hover {
   background-color: #4AA5E1;
+  font-size: 20px;
 }
 
 #home-image-container {
