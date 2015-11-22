@@ -6,3 +6,6 @@
    = Happiness !
 
 #home-image-container
+  %div{ng-controller: "PostController" }
+    %a{href: "/#/posts{{post.id}}",ng-repeat: "post in posts"}
+      %img.img-posts{ng-src: "img/posts/{{post.filename}}"}}

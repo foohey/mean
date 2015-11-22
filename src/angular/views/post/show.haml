@@ -1,0 +1,12 @@
+.post-container
+  .title.post-title-data
+    %span.title
+    {{ title }}
+    %span.author
+    {{ author }}
+  .tags.post-data
+    {{ tags }}
+  .time-data.post-data
+    {{ datetime }}
+  .comments-container
+  %img.img-post{ng-src: "img/posts/{{filename}}"}}

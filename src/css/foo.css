@@ -55,6 +55,22 @@ legend {
   padding: 40px;
 }
 
+.post-container {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 1370px;
+  padding: 40px;
+}
+
+.input-create-post {
+  margin-left: 70px;
+  width: 600px;
+}
+
+.input-describe {
+  height: 200px !important;
+}
+
 #submit-sign {
   width: 250px;
   background-color: #8CC6EC;
@@ -80,4 +96,29 @@ legend {
   margin-right: 20px;
   width: 150px;
   height: 130px;
+}
+
+.img-posts {
+    display: inline-block;
+    min-width:358px;
+    min-height:160px;
+    max-width:358px;
+    max-height:160px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+.img-post {
+  min-width: 865px;
+  min-height:450px;
+  max-width:865px;
+  max-height:450px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+
+.post-data {
+  display: inline-block;
 }
