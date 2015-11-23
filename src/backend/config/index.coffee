@@ -1,1 +1,3 @@
-module.exports.env = require( './env' )()
+module.exports =
+  env:    require( './env' )()
+  routes: require('./routes')()
