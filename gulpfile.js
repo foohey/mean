@@ -37,6 +37,7 @@ gulp.task( 'js_vendor', function() {
       config.bowerDir + '/bootsrap/dist/js/bootstrap.min.js',
       config.bowerDir + '/angular/angular.min.js',
       config.bowerDir + '/angular-route/angular-route.min.js',
+      config.bowerDir + '/angular-messages/angular-messages.min.js',
       config.bowerDir + '/angular-bootstrap/angular-ui.min.js',
       config.bowerDir + '/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'src/js/**/*.js',

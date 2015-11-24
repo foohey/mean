@@ -1,14 +1,17 @@
 @app = angular.module('app', [
   'ngRoute'
+  'ngMessages'
   'ui.bootstrap'
 ])
 
 @app.config ($routeProvider) ->
   $routeProvider.when('/signup',
     templateUrl: '/html/angular/views/user/signup.html'
+    controller: 'signUpCtrl'
   )
   $routeProvider.when('/signin',
     templateUrl: '/html/angular/views/user/signin.html'
+    controller: 'signInCtrl'
   )
   $routeProvider.when('/post:id',
     templateUrl: '/html/angular/views/post/show.html',
