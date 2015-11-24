@@ -58,7 +58,8 @@ legend {
 .post-container {
   margin: auto;
   margin-top: 20px;
-  max-width: 1370px;
+  margin-left: 315px;
+  max-width: 1525px;
   padding: 40px;
 }
 
@@ -117,8 +118,78 @@ legend {
   margin: 10px;
   width: auto;
   height: auto;
+  display: inline-block;
 }
 
-.post-data {
+.post-title-data {
+  font-size: 35px;
+}
+
+.time-data {
   display: inline-block;
+  position: relative;
+  left: 553px;
+  color: #8F8F8F;
+}
+
+.tags {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  color: #3990C9;
+  font-weight: bold;
+}
+
+.post-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.author {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 572px;
+    color: #8F8F8F;
+}
+
+.comments-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  left: 50px;
+  top: 30px;
+  float: right;
+  display: inline-block;
+  width: 495px;
+  height: 450px;
+}
+
+.comment-list {
+  overflow: auto;
+  width: 495px;
+  height: 450px;
+}
+
+.comment-author {
+  color: #3990C9;
+  font-weight: bold;
+}
+
+.comment {
+  border-bottom: 1px solid #EAEAEA;
+  margin: 5px;
+}
+
+.submit-input-comment {
+  display: none;
+}
+
+.submit-input-comment:hover {
+  background-color: #4AA5E1;
+}
+
+.text-input-comment {
+  padding-left: 5px;
+  width: 475px;
 }
