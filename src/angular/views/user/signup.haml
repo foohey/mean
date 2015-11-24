@@ -1,5 +1,5 @@
 %fieldset.sign-container
-  %form.form-horizontal{ name: "signupForm", ng-submit: "submit()", novalidate: "novalidate" }
+  %form.form-horizontal{ method: "POST", action: "/sign_up", name: "signupForm", ng-submit: "submit()", novalidate: "novalidate" }
     %legend.police.sign-text Sign up !
     .form-group
       %label.col-md-5.control-label{for: "username"} Username
@@ -23,4 +23,3 @@
     .form-group
       .col-sm-offset-5.col-sm-10
         %input#submit-sign.btn.btn-default{ ng-disabled: "!signupForm.$valid", name: "submit", type: "submit", value: "Let's go !"}
-    {{ signupForm.passwordConfirm }}
