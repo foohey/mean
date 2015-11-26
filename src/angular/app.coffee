@@ -20,6 +20,9 @@
   $routeProvider.when('/admin',
     templateUrl: '/html/angular/views/admin/post/list.html'
   )
+  $routeProvider.when('/admin/update/post:id',
+    templateUrl: '/html/angular/views/admin/post/update.html'
+  )
   $routeProvider.when('/posts/create',
     templateUrl: '/html/angular/views/admin/post/create.html'
   )

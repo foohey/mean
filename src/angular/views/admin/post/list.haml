@@ -1,1 +1,28 @@
-list of all posts
+%table{ng-controller: "listPostCtrl" }
+  %tr
+    %th Image
+    %th Title
+    %th Description
+    %th Author
+    %th Creation date
+    %th Status
+    %th Update
+    %th Delete
+  %tr{ng-repeat: "post in posts"}
+    %td.container-img-post
+      %img.img-posts-list{ng-src: "img/posts/{{post.filename}}"}}
+    %td
+      {{ post.title }}
+    %td
+      {{ post.description }}
+    %td
+      {{ post.author }}
+    %td.post-creation-date
+      {{ post.datetime }}
+    %td
+      if post.published
+
+    %td
+      %a{href: "/#/admin#post/update{{ post.id }}"} Update
+    %td
+      %a{href: "/#/admin#post/delete{{ post.id }}"} Delete

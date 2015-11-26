@@ -110,6 +110,16 @@ legend {
     height: auto;
 }
 
+.img-posts-list {
+  min-width:200px;
+  min-height:100px;
+  max-width:200px;
+  max-height:100px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+
 .img-post {
   min-width: 865px;
   min-height:450px;
@@ -135,8 +145,6 @@ legend {
 .tags {
   display: inline-block;
   position: relative;
-  left: 10px;
-  color: #3990C9;
   font-weight: bold;
 }
 
@@ -145,13 +153,12 @@ legend {
   margin-bottom: 10px;
   margin-left: 10px;
 }
-
 .author {
-    display: inline-block;
-    float: right;
-    position: relative;
-    right: 572px;
-    color: #8F8F8F;
+  display: inline-block;
+  float: right;
+  position: relative;
+  right: 572px;
+  color: #8F8F8F;
 }
 
 .comments-container {
@@ -162,7 +169,7 @@ legend {
   float: right;
   display: inline-block;
   width: 495px;
-  height: 450px;
+  height: 450px
 }
 
 .comment-list {
@@ -192,4 +199,16 @@ legend {
 .text-input-comment {
   padding-left: 5px;
   width: 475px;
+}
+
+table {
+  width: 100%
+}
+
+.container-img-post {
+  width: 12%;
+}
+
+.post-creation-date {
+  width: 10%
 }
